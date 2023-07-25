@@ -18,7 +18,7 @@ cd "$DOCKER_DIR"
 ## The reason for having a dedicated docker dir is because docker can only run on
 ## a full linux FS. In my setup I have the remote dirs on a cifs mount so docker
 ## won't run there
-git clone --recurse-submodules https://github.com/lukehmcc/exif-wrapper.git
+git clone --recurse-submodules https://github.com/tzutoo/exif-wrapper.git
 cd exif-wrapper
 echo "TAKEOUT_DIR=${BASE_DIR}/Takeout" > .env
 docker compose up
